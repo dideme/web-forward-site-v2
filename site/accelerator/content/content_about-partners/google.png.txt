@@ -1,0 +1,5 @@
+Name: Google Developers
+----
+Link: https://developers.google.com/
+----
+Main: Google is committed to helping build vibrant startup ecosystems and to supporting future entrepreneurs. This beta program provides Google products to developers to help startups launch and scale their big ideas more quickly.

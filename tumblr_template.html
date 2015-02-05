@@ -1,0 +1,190 @@
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    	<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>WebFWD {block:PostSummary}| {PostSummary}{/block:PostSummary}</title>
+
+	<!-- Included CSS Files -->
+	<!-- <link rel="stylesheet" href="https://webfwd.org/assets/stylesheets/foundation.min.css" /> -->
+	<!-- <link rel="stylesheet" href="https://webfwd.org/assets/stylesheets/app.min.css" /> -->
+	<link rel="stylesheet" href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" />
+	<!-- Bootstrap core CSS -->
+  <link href="https://beta.webfwd.org/assets/styles/bootstrap.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="https://beta.webfwd.org/assets/styles/base.css" rel="stylesheet">
+  <link href="https://beta.webfwd.org/assets/styles/animated-header-component.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="https://webfwd.org/stylesheets/ie.min.css">
+	<![endif]-->
+
+	<script src="https://webfwd.org/assets/javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Video JS code -->
+  <link rel="stylesheet" href="https://webfwd.org/assets/stylesheets/video-js.min.css" />
+  <script src="https://webfwd.org/assets/javascripts/video.min.js"></script>
+  <script>_V_.options.flash.swf = "https://webfwd.org/assets/images/video-js/video-js.swf";</script>
+
+	<!-- Sublime Video JS code -->
+  <script type="text/javascript" src="//cdn.sublimevideo.net/js/jzzorzdl.js"></script>
+
+	<!-- The ever-so-important FavIcon -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://webfwd.org/assets/images/favicon.png" />
+
+	<!-- RSS Feed -->
+	<link rel="alternate" type="application/rss+xml" href="http://blog.webfwd.org/rss" />
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35433268-9']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+
+	<!-- Generated: @updated -->
+
+	<style type="text/css" media="screen">
+        .top-image-bg {
+          background: url('https://beta.webfwd.org/assets/images/promo-main.png') no-repeat center center fixed;
+          background-size: cover;
+          height: auto;
+        }
+    </style>
+
+</head>
+    <body id="blog">
+      <div class="top-image-bg"> <!-- big header bg -->
+          <!-- navigation -->
+          <nav class="navbar-static-top mainnav">
+            <div class="container">
+              <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
+              <div class="row mainnavrow">
+                  <div class="col-xs-12 col-sm-12 col-md-4 logoarea">
+                    <a href="https://beta.webfwd.org" class=""><img src="https://beta.webfwd.org/assets/images/sandstone/logo-w.png" alt="WebFWD" class="brandlogo" /></a>
+                  </div>
+                  <nav class="col-xs-12 col-sm-12 col-md-8 text-right navlinks">
+                      <a href="https://beta.webfwd.org">Home</a>
+                      <a href="https://beta.webfwd.org/resources/">Resources</a>
+                      <a href="http://blog.webfwd.org/" class="active">Blog</a>
+                      <a href="https://beta.webfwd.org/about/">About</a>
+                  </nav>
+              </div>
+            </div>
+          </nav>
+  				<section class="header-box">
+            <div class="container">
+              <!-- main content -->
+              <section class="row">
+                <div class="col-md-12">
+                  <h1>Blog</h1>
+                  <!-- <h4>Check the latest updates here!</h4> -->
+                </div>
+              </section>
+            </div>
+          </section>
+        </div> <!-- end .top-image-bg -->
+
+        <!-- container -->
+        <section class="container maincontent">
+
+  				<!-- main -->
+  				{block:Posts}
+  				{block:Text}
+
+  				<div class="row padding tumblr">
+  					<div class="col-xs-12 col-md-4">
+  						{block:Title}
+  						<h3><a href="{Permalink}">{Title}</a></h3>
+  						{block:Date}<h6>{ShortMonth} {DayOfMonth}, {Year}</h6>{/block:Date}
+  						{/block:Title}
+  						{block:HasTags}{block:Tags}<span class="blue radius label"><a href="{TagURL}" class="tumblrTag">{Tag}</a></span>&nbsp;{/block:Tags}{/block:HasTags}
+  					</div>
+  					<div class="col-xs-12 col-md-8">
+  						{Body}
+  					</div>
+  				</div>
+
+  				{/block:Text}
+  				{/block:Posts}
+
+  				<div class="row padding">
+  				    <div class="col-xs-4"></div>
+  					<div class="col-xs-8">
+  						{block:PreviousPage}<a href="{PreviousPage}" class="small white radius button">&#171; Previous</a>&nbsp;{/block:PreviousPage}
+  						<a href="/archive" class="small white radius button">Archive</a>
+  						{block:NextPage}&nbsp;<a href="{NextPage}" class="small white radius button">Next &#187;</a>&nbsp;{/block:NextPage}
+  					</div>
+  				</div>
+  				<!-- main -->
+
+  			</section>
+        <!-- /end container -->
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+		  <div class='row'>
+  			<div class="col-xs-12 col-md-4">
+  				<a href="http://www.mozilla.org/" class="footer-logo"><img src="https://beta.webfwd.org/assets/images/sandstone/footer-mozilla.png" alt="mozilla" /></a>
+  			</div>
+  			<div class="col-xs-6 col-md-4">
+  				<nav>
+  					<ul class="list-unstyled">
+  						<li><a href="mailto:webfwd@mozilla.com">Contact</a></li>
+  						<li><a href="https://twitter.com/#!/MozWebFWD">Twitter</a></li>
+  						<li><a href="https://www.facebook.com/webfwd">Facebook</a></li>
+  					</ul>
+  				</nav>
+  			</div>
+  			<div class="col-xs-6 col-md-4">
+  				<nav>
+  					<ul class="list-unstyled">
+  						<!-- <li><a href="/calendar/">Events</a></li> -->
+  						<li><a href="http://www.mozilla.org/privacy-policy.html">Privacy Policy</a></li>
+  						<li><a href="http://www.mozilla.org/about/legal.html">Legal Notices</a></li>
+  					</ul>
+  				</nav>
+  			</div>
+  		</div>
+		</div>
+	</footer>
+	<!-- /footer -->
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://beta.webfwd.org/assets/js/jquery-1.10.2.min.js"></script>
+  <script src="https://beta.webfwd.org/assets/js/bootstrap.min.js"></script>
+  <script src="https://beta.webfwd.org/assets/js/classie.js"></script>
+  <script src="https://beta.webfwd.org/assets/js/cbpAnimatedHeader.js"></script>
+  <script src="https://beta.webfwd.org/assets/js/modernizr.custom.js"></script>
+  <script src="https://www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
+  <script src="https://beta.webfwd.org/assets/js/custom.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
+    //add responsive image
+    $(function(){
+      $(".row.tumblr img").addClass("img-responsive");
+    });
+  </script>
+
+
+</body>
+</html>

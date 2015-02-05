@@ -1,0 +1,26 @@
+Title: Home
+----
+ID: home
+----
+Headline: We help entrepreneurs<br/>change the world.
+----
+MainImage: assets/images/main-promo.png
+----
+Section1: What is WebFWD?
+----
+Section1Image:
+----
+Section1Text: <p>Mozilla has changed the landscape of the web. Along the way, we’ve developed best-in-class expertise that can help tech entrepreneurs grow their businesses. At WebFWD, we share Mozilla resources with entrepreneurs around the world.</p>
+----
+Section2:
+----
+Section2Image: <img src="assets/images/promo-b.png" class="img-responsive promo-img">
+----
+Section2Subhead1: <p>History</p>
+----
+Section2Text1: <p>We launched WebFWD in 2011 to extend Mozilla's mission through entrepreneurs making the web a better place. What started as a cohort of 2 teams and weekly lectures evolved into a robust, 3-month program of structured curriculum and applied learning for over 33 teams around the world. You can review the portfolio of startups we worked with <a href="https://webfwd.org/portfolio/">here.</a> Since 2014, we are not running the 3-month program anymore. We continue to offer the resources we developed at WebFWD to entrepreneurs around the world. </p>
+----
+Section2Subhead2: <p>Resources</p>
+----
+Section2Text2: <p> You can find the WebFWD resources <a href="https://webfwd.org/resources/">here.</a></p>
+----
